@@ -1,0 +1,9 @@
+name: 'PlayerLocate'
+version: '1.0.0'
+main: org.playerlocate.playerlocate.PlayerLocate
+api_version: 1.16
+commands:
+    locateplayer:
+      description: "Lock your chests"
+      usage: /<command> player
+      permission: PlayerLocate.locate
