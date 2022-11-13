@@ -18,6 +18,8 @@ public class PlayerLocate extends JavaPlugin {
     @Override
     public void onEnable() {
         getLogger().info("Locator has been Enabled");
+        int pluginId = 16862;
+        Metrics metrics = new Metrics(this, pluginId);
         this.getCommand("locateplayer").setExecutor(new locateplayer());
         getServer().getPluginManager().registerEvents(new logout(), this);
         createCustomConfig();
